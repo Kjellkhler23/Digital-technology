@@ -164,7 +164,7 @@ income_after_taxes = taxes_decimal - Income
 
 
 #Income after Taxes printed
-Print("your income this week after taxes was:{}$".format(income_after_taxes))
+print("your income this week after taxes was:{}$".format(income_after_taxes))
 
 
 
