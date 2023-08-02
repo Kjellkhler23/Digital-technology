@@ -160,13 +160,15 @@ taxes_percentage = int(input("what percentage of your income goes into taxes? : 
 taxes_calculation = (taxes_percentage / 100)
 taxes_decimal = taxes_calculation * total_income_week 
 income_after_taxes = total_income_week - taxes_decimal
+print("")
+time.sleep(reading_tempo)
 
 
 
 #Income after Taxes printed
 print("your income this week after taxes was:{}$".format(income_after_taxes))
-
-
+print("")
+time.sleep(reading_tempo)
 
 #Ending program
 print("Thats it, Thanks you {} using the income calculator!")
