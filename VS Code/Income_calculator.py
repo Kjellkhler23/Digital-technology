@@ -164,3 +164,4 @@ time.sleep(reading_tempo)
 
 #Ending program
 print("Thats it, Thanks you {} using the income calculator!".format(name))
+delay(30)
