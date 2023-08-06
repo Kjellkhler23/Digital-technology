@@ -53,11 +53,6 @@ elif(reading_tempo_determination == 9):
 
 elif(reading_tempo_determination == 10):
     reading_tempo += 10
-
-else:
-     print("Invalid input")
-     reading_tempo_determinationint = input("How fast would you like the tempo to be from 1 (very fast) - 10 (very slow)? : ")
-
     
    
 
