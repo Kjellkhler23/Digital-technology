@@ -14,45 +14,30 @@ time.sleep(1.5)
 
 #Reading tempo
 
-reading_tempo = 0
+while True:
+    try:
+        reading_tempo = int(input("How fast would you like the tempo to be from 1 (very fast) - 10 (very slow)? : "))
+        print("")
 
+    except ValueError:
+        print("Sorry the number you put in is Invalid, please pick from 1-10")
+        continue
 
+    if reading_tempo < 1:
+        print("Sorry the number you put in is Invalid, please pick from 1-10")
+        print("")
+        time.sleep(1.5)
+        continue
 
-reading_tempo_determination = int(input("How fast would you like the tempo to be from 1 (very fast) - 10 (very slow)? : "))
-print("")
+    elif reading_tempo > 10:
+        print("Sorry the number you put in is Invalid, please pick from 1-10")
+        print("")
+        time.sleep(1.5)
+        continue
 
-
-
-
-if(reading_tempo_determination == 1):
-    reading_tempo += 1
-
-elif(reading_tempo_determination == 2):
-    reading_tempo += 2
-
-elif(reading_tempo_determination == 3):
-    reading_tempo += 3
-
-elif(reading_tempo_determination == 4):
-    reading_tempo += 4
-
-elif(reading_tempo_determination == 5):
-    reading_tempo += 5
-
-elif(reading_tempo_determination == 6):
-    reading_tempo += 6
-
-elif(reading_tempo_determination == 7):
-    reading_tempo += 7
-
-elif(reading_tempo_determination == 8):
-    reading_tempo += 8
-
-elif(reading_tempo_determination == 9):
-    reading_tempo += 9
-
-elif(reading_tempo_determination == 10):
-    reading_tempo += 10
+    else:
+        break
+    
     
    
 
@@ -63,6 +48,7 @@ time.sleep(reading_tempo)
 #Income determination
 
 Income = int(input("What is your income {}? ".format(name)))
+print("")
 
 time.sleep(reading_tempo)
 
@@ -177,4 +163,4 @@ print("")
 time.sleep(reading_tempo)
 
 #Ending program
-print("Thats it, Thanks you {} using the income calculator!")
+print("Thats it, Thanks you {} using the income calculator!".format(name))
